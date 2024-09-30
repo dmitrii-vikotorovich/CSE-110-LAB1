@@ -41,16 +41,41 @@ li a:hover {
   background-color: #111;
 }
 
+#navbar {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
 <head>
 <body>
 </style>
 <div class="myDiv1">
 <img src="C:\Users\dlatypov\CSE-110-LAB1\logo_UCSD.png" alt="UCSD logo">
+
 <ul>
-	<li><a href="#section-1">Section 1</a><br /></li>
-	<li><a href="#section-2">Section 2</a><br /></li>
+	<div id="navbar">
+  	<li><a href="#section-1">Section 1</a></li>
+  	<li><a href="#section-2">Section 2</a></li>
+	</div>
 </ul>
-<h2 id="section-1">Section 1</h2>
+
 <img src="C:\Users\dlatypov\CSE-110-LAB1\ucsd-athletics-logo.svg" alt="Sports logo">
 </div>
 <div class="myDiv2">
