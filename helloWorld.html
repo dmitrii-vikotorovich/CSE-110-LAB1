@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html>
-<body>
-<img src="C:\Users\dlatypov\CSE-110-LAB1\logo_UCSD.png" alt="UCSD logo">
-<a href="#section-1">Section 1</a><br />
-<a href="#section-2">Section 2</a><br />
-<h2 id="section-1">Section 1</h2>
-<img src="C:\Users\dlatypov\CSE-110-LAB1\logos-college-logos-07-23.svg" alt="Sports logo">
-<h2 id="section-2">Section 2</h2>
-<img src="C:\Users\dlatypov\CSE-110-LAB1\ucsd-athletics-logo.svg" alt="Colleges logo">
+<head>
+<style>
+<link rel="stylesheet" href="styles.css">
+.myDiv1 {
+  border: 0px outset red;
+  background-color: rgb(245, 240, 230)
+  text-align: center;
+}
+.myDiv2 {
+	color:white
+	padding:60px;
+	background-image:url("https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg");
+}
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  display: inline;
+}
+
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+<head>
+<body>
+</style>
+<div class="myDiv1">
+<img src="C:\Users\dlatypov\CSE-110-LAB1\logo_UCSD.png" alt="UCSD logo">
+<ul>
+	<li><a href="#section-1">Section 1</a><br /></li>
+	<li><a href="#section-2">Section 2</a><br /></li>
+</ul>
+<h2 id="section-1">Section 1</h2>
+<img src="C:\Users\dlatypov\CSE-110-LAB1\ucsd-athletics-logo.svg" alt="Sports logo">
+</div>
+<div class="myDiv2">
+<h2 id="section-2">Section 2</h2>
+<img src="C:\Users\dlatypov\CSE-110-LAB1\logos-college-logos-07-23.svg" alt="Colleges logo">
+</div>
 </body>
