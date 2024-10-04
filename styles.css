@@ -1,4 +1,7 @@
 
+p{
+font-size:28px;
+}
    html {
        scroll-behavior: smooth;
    }
@@ -6,6 +9,8 @@
        margin:0;
        padding: 0;
    }
+
+h2{}
 
     .myDiv2 {
             vertical-align: top;
@@ -22,6 +27,28 @@
         background-image: url("https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg");
     }
 
+     .myDiv4 {
+                vertical-align: top;
+                margin: 0;
+                padding: 10px;
+                background-color: rgb(245, 240, 230);
+     }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.box{
+background-color:#182b49;
+color:white;
+max-height:500px;
+text-align:center;
+font-size:28px;
+
+}
+
 h2{
     display: block;
     font-size: 2em;
@@ -31,10 +58,14 @@ h2{
     margin-inline-end: 0px;
     font-weight: bold;
     unicode-bidi: isolate;
+    max-width:100%;
 }
 
 .logo{
     max-width:400px;
+}
+.sports{
+    max-width:100%;
 }
 
 ul {
@@ -48,6 +79,28 @@ ul {
 
 li {
     float: left;
+}
+
+@media (max-width: 800px) {
+.navbar{
+display:none;
+}
+    .logo{
+    max-width:300px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:repeat(2,auto);
+    }
 }
 
 li a {
@@ -71,5 +124,8 @@ li a:hover {
    overflow: hidden;
    color:black;
    background-color: white;
+}
+img{
+max-width:100%;
 }
 
