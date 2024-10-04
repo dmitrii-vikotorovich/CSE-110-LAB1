@@ -1,87 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-<link rel="stylesheet" href="styles.css">
-.myDiv1 {
-  border: 0px outset red;
-  background-color: rgb(245, 240, 230)
-  text-align: center;
-}
-.myDiv2 {
-	color:white
-	padding:60px;
-	background-image:url("https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg");
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  display: inline;
-}
-
-li {
-  float: left;
-}
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
-
-#navbar {
-  position: sticky;
-  top: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Navbar links */
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-/* Page content */
-.content {
-  padding: 16px;
-}
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="myDiv1">
-<img src="C:\Users\dlatypov\CSE-110-LAB1\logo_UCSD.png" alt="UCSD logo">
-
-<ul>
-	<div id="navbar">
-  	<li><a href="#section-1">Section 1</a></li>
-  	<li><a href="#section-2">Section 2</a></li>
-	</div>
-</ul>
-
-<img src="C:\Users\dlatypov\CSE-110-LAB1\ucsd-athletics-logo.svg" alt="Sports logo">
+<div class="navbar">
+    <img src="logo_UCSD.png" alt="UCSD logo" class="logo" style="margin-left:24px;">
+    <ul>
+        <li><a href="#section-1"  style="margin-left:16px;">Section 1</a></li>
+        <li><a href="#section-2" >Section 2</a></li>
+        <li><a href="#section-2" >Section 3</a></li>
+    </ul>
 </div>
+
 <div class="myDiv2">
-<h2 id="section-2">Section 2</h2>
-<img src="C:\Users\dlatypov\CSE-110-LAB1\logos-college-logos-07-23.svg" alt="Colleges logo">
+    <h1 id="section-1" style="margin-left:24px;">Section 1</h1>
+    <img src="ucsd-athletics-logo.svg" alt="Sports logo" width="auto" height="auto" style="margin-left:24px;">
 </div>
+
+
+<div class="myDiv3">
+    <h2 id="section-2" style="margin-left:24px;">Section 2</h2>
+    <img src="logos-college-logos-07-23.svg" alt="Colleges logo" width="100%" height="auto"style="margin-left:24px;">
+</div>
+
 </body>
-</style>
 </html>
