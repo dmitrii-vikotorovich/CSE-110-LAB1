@@ -32,23 +32,41 @@ h2{}
                 margin: 0;
                 padding: 10px;
                 background-color: rgb(245, 240, 230);
+
      }
 
 .wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
-  grid-auto-rows: minmax(100px, auto);
+  max-height:400px;
+   overflow-y:auto;
 }
 .box{
 background-color:#182b49;
 color:white;
-max-height:500px;
+height:400px;
+display:flex;
+align-items:center;
 text-align:center;
+justify-content:center;
 font-size:28px;
 
 }
 
+
+
+
+
+.box {
+   background-color: #182b49; /* Background color */
+       color: white; /* Text color */
+       max-height: 400px; /* Set a max height for each box */
+       overflow-y: auto; /* Enable vertical scrolling for each box */
+       padding: 10px; /* Add padding inside the box */
+       text-align: center;
+       font-size: 28px; /* Font size for the text inside the box */
+}
 h2{
     display: block;
     font-size: 2em;
@@ -82,26 +100,32 @@ li {
 }
 
 @media (max-width: 800px) {
-.navbar{
-display:none;
-}
-    .logo{
-    max-width:300px;
+    .navbar {
+        display: none; /* Hides the navbar on screens smaller than 800px */
+    }
+
+    .logo {
+        max-width: 300px; /* Sets a maximum width for the logo */
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 24px; /* Adjusts the font size of h1 */
     }
 
     p {
-        font-size: 20px;
+        font-size: 20px; /* Adjusts the font size of paragraphs */
     }
 
     .wrapper {
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows:repeat(2,auto);
+        display: grid; /* Ensure it's a grid layout */
+        grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+        grid-template-rows: repeat(2, auto); /* Creates 2 rows with automatic height */
+        overflow-y: auto; /* Enables vertical scrolling if content exceeds height */
+        max-height: 400px; /* Set a max height to trigger scrolling */
+        gap: 10px; /* Optional: adds space between items */
     }
 }
+
 
 li a {
     display: block;
